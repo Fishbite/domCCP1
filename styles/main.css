@@ -1,0 +1,97 @@
+/* variables */
+
+:root {
+  /* ========== colours ========== */
+  --clr-green: rgb(50, 110, 50);
+  --clr-white: rgb(255, 255, 230);
+  /* ========== greys ========== */
+  /* palettes create with https://colordesigner.io/ */
+  --clr-grey-1: #4d504e;
+  --clr-grey-2: #6f7472;
+  --clr-grey-3: #939795;
+  --clr-grey-4: #b7bab8;
+  --clr-grey-5: #dbdcdc;
+  /* ========== dark greys ========== */
+  --clr-grey-dark-1: #090b0b;
+  --clr-grey-dark-2: #121615;
+  --clr-grey-dark-3: #1c2120;
+  --clr-grey-dark-4: #252b2b;
+  --clr-grey-dark-5: #2e3635;
+  /* ========== text ========== */
+  --letter-spacing: 0.1rem;
+  /* ========== borders ========== */
+  --form-border: 1px solid var(--clr-grey-5);
+  --form-border-radius: 4px;
+}
+
+/* ========== global styles ========== */
+*,
+::after,
+::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 16px;
+  line-height: 1.5;
+  box-sizing: border-box;
+  font-family: monospace;
+  background-color: var(--clr-white);
+}
+
+ul {
+  list-style-type: none;
+}
+
+h1,
+h2 {
+  text-transform: capitalize;
+  letter-spacing: var(--letter-spacing);
+}
+
+/* ========== main styles ========== */
+.header-container {
+  height: 4rem;
+  background-color: var(--clr-green);
+  color: var(--clr-white);
+  padding-top: 0.5rem;
+  padding-left: 2rem;
+}
+
+.form-container {
+  width: 80vw;
+  margin: 1rem auto 0;
+  max-width: 440px;
+  padding: 1rem;
+  border: var(--form-border);
+  border-radius: var(--form-border-radius);
+}
+
+.form-control {
+  padding: 0.5rem;
+  border: var(--form-border);
+  border-radius: var(--form-border-radius);
+}
+
+.btn {
+  padding: 0.5rem;
+  border: var(--form-border-radius);
+  border-radius: var(--form-border-radius);
+  background-color: var(--clr-grey-4);
+}
+
+.list-group-item {
+  padding: 0.5rem;
+  margin-top: -1px; /* prevent double lines */
+  border: var(--form-border);
+  letter-spacing: var(--letter-spacing);
+}
+.list-group-item:first-child {
+  border-radius: var(--form-border-radius) var(--form-border-radius) 0 0;
+}
+
+.list-group-item:last-child {
+  border-radius: 0 0 var(--form-border-radius) var(--form-border-radius);
+}
