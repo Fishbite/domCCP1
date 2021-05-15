@@ -1,2 +1,2 @@
 # item_lister
-just some DOM maniputation practice
+just some DOM maniputation stuff
