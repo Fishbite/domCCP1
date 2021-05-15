@@ -2,8 +2,9 @@
 
 :root {
   /* ========== colours ========== */
-  --clr-green: rgb(50, 110, 50);
-  --clr-white: rgb(255, 255, 230);
+  --clr-btn-hover: #e4a300;
+  --clr-green: #326e32;
+  --clr-white: #ffffe6;
   /* ========== greys ========== */
   /* palettes create with https://colordesigner.io/ */
   --clr-grey-1: #4d504e;
@@ -22,6 +23,8 @@
   /* ========== borders ========== */
   --form-border: 1px solid var(--clr-grey-5);
   --form-border-radius: 4px;
+  /* ========== effects ========== */
+  --transition: all 0.1s linear;
 }
 
 /* ========== global styles ========== */
@@ -77,9 +80,16 @@ h2 {
 
 .btn {
   padding: 0.5rem;
-  border: var(--form-border-radius);
+  border: none;
   border-radius: var(--form-border-radius);
-  background-color: var(--clr-grey-4);
+  background-color: var(--clr-grey-2);
+  color: var(--clr-white);
+  letter-spacing: var(--letter-spacing);
+  font-weight: bold;
+  transition: var(--transition);
+}
+.btn:hover {
+  background-color: var(--clr-btn-hover);
 }
 
 .list-group-item {
