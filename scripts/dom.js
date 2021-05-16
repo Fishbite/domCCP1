@@ -62,31 +62,31 @@
 // h2[1].style.backgroundColor = "palegreen";
 
 // querySelector
-const header = document.querySelector("#main-header");
-header.style.borderBottom = "3px solid darkblue";
-// querySelector only grabs the first instance of the element in the DOM
-const input = document.querySelector("input");
-input.value = "Hey Dude :)";
-const submit = document.querySelector('input[type="submit"]');
-submit.value = "send!";
+// const header = document.querySelector("#main-header");
+// header.style.borderBottom = "3px solid darkblue";
+// // querySelector only grabs the first instance of the element in the DOM
+// const input = document.querySelector("input");
+// input.value = "Hey Dude :)";
+// const submit = document.querySelector('input[type="submit"]');
+// submit.value = "Add";
 
-const item = document.querySelector(".list-group-item");
-item.style.color = "red";
-const lastItem = document.querySelector(".list-group-item:last-child");
-lastItem.style.color = "green";
+// const item = document.querySelector(".list-group-item");
+// item.style.color = "red";
+// const lastItem = document.querySelector(".list-group-item:last-child");
+// lastItem.style.color = "green";
 
-const secondItem = document.querySelector(".list-group-item:nth-child(2)");
-secondItem.style.color = "goldenrod";
-// querySelectorAll
-const titles = document.querySelectorAll(".title");
-titles[0].textContent = "add items below";
+// const secondItem = document.querySelector(".list-group-item:nth-child(2)");
+// secondItem.style.color = "goldenrod";
+// // querySelectorAll
+// const titles = document.querySelectorAll(".title");
+// titles[0].textContent = "add items below";
 
-const odd = document.querySelectorAll("li:nth-child(odd)");
-const even = document.querySelectorAll("li:nth-child(even)");
-console.log(odd.length);
-for (let i = 0; i < odd.length; i++) {
-  odd[i].style.backgroundColor = "lightskyblue";
-  even[i].style.backgroundColor = "#ffff99";
-  console.log(i);
-  console.log(odd[i].style.backgroundColor);
-}
+// const odd = document.querySelectorAll("li:nth-child(odd)");
+// const even = document.querySelectorAll("li:nth-child(even)");
+// console.log(odd.length);
+// for (let i = 0; i < odd.length; i++) {
+//   odd[i].style.backgroundColor = "#ddddff";
+//   even[i].style.backgroundColor = "#ffff99";
+//   console.log(i);
+//   console.log(odd[i].style.backgroundColor);
+// }
