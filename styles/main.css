@@ -57,7 +57,7 @@ h2 {
 
 /* ========== main styles ========== */
 .header-container {
-  height: 4rem;
+  height: auto;
   background-color: var(--clr-green);
   color: var(--clr-white);
   padding-top: 0.5rem;
