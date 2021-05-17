@@ -40,26 +40,26 @@
 // itemList.previousElementSibling.style.color = "#3333ff";
 
 // new div
-let newDiv = document.createElement("div");
+// let newDiv = document.createElement("div");
 
-//add class
-newDiv.className = "hello";
-//add id
-newDiv.id = "hello1";
-// add attribute
-newDiv.setAttribute("title", "HelloDiv");
-newDiv.setAttribute("data-set", "id");
-// create text node
-let newDivText = document.createTextNode("Hello World");
-//add text to div
-newDiv.appendChild(newDivText);
+// //add class
+// newDiv.className = "hello";
+// //add id
+// newDiv.id = "hello1";
+// // add attribute
+// newDiv.setAttribute("title", "HelloDiv");
+// newDiv.setAttribute("data-set", "id");
+// // create text node
+// let newDivText = document.createTextNode("Hello World");
+// //add text to div
+// newDiv.appendChild(newDivText);
 
-const container = document.querySelector("header .header-container");
-let h1 = document.querySelector("header h1");
-newDiv.style.fontSize = "0.75rem";
+// const container = document.querySelector("header .header-container");
+// let h1 = document.querySelector("header h1");
+// newDiv.style.fontSize = "0.75rem";
 
-// insert newDiv into the DOM
-// syntax: insertBefore(ThingToInsert, insertBeforeThisElement)
-container.insertBefore(newDiv, h1);
+// // insert newDiv into the DOM
+// // syntax: insertBefore(ThingToInsert, insertBeforeThisElement)
+// container.insertBefore(newDiv, h1);
 
-console.log(newDiv);
+// console.log(newDiv);
