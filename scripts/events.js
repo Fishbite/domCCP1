@@ -8,10 +8,12 @@ const button = document.getElementById("button");
 // or call an external function
 button.addEventListener("click", buttonClick);
 
-function buttonClick() {
+function buttonClick(e) {
   console.log("button clicked");
-  //change the title text
-  document.getElementById("header-title").textContent = "changed";
-  // change the background colour
-  document.querySelector(".form-container").style.backgroundColor = "#f4f4f4";
+  // //change the title text
+  // document.getElementById("header-title").textContent = "changed";
+  // // change the background colour
+  // document.querySelector(".form-container").style.backgroundColor = "#f4f4f4";
+  console.log(e.target);
+  console.log(e.target.id);
 }
