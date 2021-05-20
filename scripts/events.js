@@ -41,7 +41,7 @@ const button = document.getElementById("button");
 
 // listen for mouse event on an element
 
-var box = document.getElementById("box");
+// var box = document.getElementById("box");
 // console.log(box);
 
 // listen to mouse enter / leave parent element
@@ -49,15 +49,46 @@ var box = document.getElementById("box");
 // listen to mouse over / out parent & child element
 // box.addEventListener("mouseover", runEvent);
 // box.addEventListener("mouseout", runEvent);
+
 // listen to mouse moving in an element
-box.addEventListener("mousemove", runEvent);
+// box.addEventListener("mousemove", runEvent);
+
+// function runEvent(e) {
+//   console.log("event type:", e.type);
+//   //output the  mouse coordinates to the screen
+//   // output.innerHTML =
+//   //   "<h3>mouseX:" + e.offsetX + "</h3><h3>mouseY:" + e.offsetY + "</h3>";
+
+//   // change the colour of the box using mouse coords
+//   box.style.backgroundColor = "rgb(" + e.offsetX + "," + e.offsetY + ",0)";
+// }
+
+// ========== working with the form =========\\
+
+const itemInput = document.querySelector('input[type="text"]');
+const form = document.querySelector("form");
+const select = document.querySelector("select");
+
+// itemInput.addEventListener("keydown", runEvent);
+// itemInput.addEventListener("keyup", runEvent);
+// itemInput.addEventListener("keypress", runEvent);
+
+// listen for the element to get focus
+// itemInput.addEventListener("focus", runEvent);
+// listen for the element to lose focus
+// itemInput.addEventListener("blur", runEvent);
+// // listen for cut and paste in an element
+// itemInput.addEventListener("cut", runEvent);
+// itemInput.addEventListener("paste", runEvent);
+// // // listen for any input in an element
+// itemInput.addEventListener("input", runEvent);
+
+select.addEventListener("change", runEvent);
 
 function runEvent(e) {
+  e.preventDefault();
+  // capture the value being typed
   console.log("event type:", e.type);
-  //output the  mouse coordinates to the screen
-  // output.innerHTML =
-  //   "<h3>mouseX:" + e.offsetX + "</h3><h3>mouseY:" + e.offsetY + "</h3>";
-
-  // change the colour of the box using mouse coords
-  box.style.backgroundColor = "rgb(" + e.offsetX + "," + e.offsetY + ",0)";
+  // // doesn't return empty string when type is deleted???? Why!!?
+  console.log(e.target.value);
 }
